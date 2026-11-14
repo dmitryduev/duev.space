@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" data-pal="viridis">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dmitry Duev · duev.space</title>
+<meta name="description" content="Dmitry Duev: Staff Engineer at CoreWeave, leading the W&amp;B SDK team. Recovering astronomer.">
+<meta name="author" content="Dmitry Duev">
+<meta name="theme-color" content="#0d0b17">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://duev.space/">
+<meta property="og:title" content="Dmitry Duev · duev.space">
+<meta property="og:description" content="I build the tools that make AI research go faster. Recovering astronomer.">
+<meta property="og:image" content="https://duev.space/static/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="static/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="static/img/icon-180.png">
+<link rel="stylesheet" href="static/css/site.css">
+<script src="static/js/pal.js"></script>
+<script src="static/js/site.js" defer></script>
+</head>
+<body>
+
+<header class="hud">
+  <a class="hud-logo" href="#top"><span class="px" data-scale="2" data-min="2">DUEV.SPACE</span></a>
+  <nav class="hud-nav" aria-label="Sections">
+    <a href="#p1">P1</a>
+    <a href="#quests">QUESTS</a>
+    <a href="#items">ITEMS</a>
+    <a href="#scores">SCORES</a>
+    <a href="#links">LINKS</a>
+  </nav>
+  <button class="hud-btn" id="view" type="button" title="Switch view">VIEW <b id="view-name">PLANET</b></button>
+  <button class="hud-btn" id="pal" type="button" title="Swap palette">PAL <b id="pal-name">VIRIDIS</b></button>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-label="Intro">
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <p class="kicker">PLAYER 1 · CALIFORNIA</p>
+    <h1 class="px title" data-scale="9" data-min="4">DMITRY DUEV</h1>
+    <p class="tag">staff engineer · ai infra · recovering astronomer</p>
+    <p class="lede">I build the tools that make AI research go faster. Before that, I spent a decade
+      tracking spacecraft with radio telescopes, shooting lasers into space, and teaching AI to do astronomy.</p>
+    <a class="start" href="#p1">PRESS START <span aria-hidden="true">▼</span></a>
+  </div>
+  <div class="fade" aria-hidden="true"></div>
+</section>
+
+<section class="sec" id="p1">
+  <h2 class="px tab" data-scale="3" data-min="2">PLAYER 1</h2>
+  <div class="win p1">
+    <figure class="portrait">
+      <img id="portrait" src="static/img/portrait.png" width="128" height="128" alt="Dithered pixel-art portrait of Dmitry">
+    </figure>
+    <div>
+      <dl class="stats">
+        <dt>NAME</dt><dd>Dmitry “Dima” Duev</dd>
+        <dt>CLASS</dt><dd>Staff Engineer @ CoreWeave</dd>
+        <dt>QUEST</dt><dd>Leading the W&amp;B SDK team</dd>
+        <dt>BASE</dt><dd>California</dd>
+        <dt>ORIGIN</dt><dd>PhD, Radio Astronomy</dd>
+        <dt>SPELLS</dt><dd>Go · Rust · Python</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="log" aria-label="Quests, items and scores">
+  <div class="tabs" role="tablist" aria-label="Log">
+    <button class="px tab" role="tab" id="tab-quests" aria-controls="quests" aria-selected="true" data-scale="3" data-scale-sm="2" data-min="2">QUESTS</button>
+    <button class="px tab" role="tab" id="tab-items" aria-controls="items" aria-selected="false" data-scale="3" data-scale-sm="2" data-min="2">ITEMS</button>
+    <button class="px tab" role="tab" id="tab-scores" aria-controls="scores" aria-selected="false" data-scale="3" data-scale-sm="2" data-min="2">HI-SCORES</button>
+  </div>
+  <div class="win">
+    <div class="panel" id="quests" role="tabpanel" aria-labelledby="tab-quests">
+      <ol class="quests">
+        <li class="q now">
+          <span class="world">WORLD 4</span>
+          <p><b>CoreWeave</b> <span class="dim">(via Weights &amp; Biases)</span>. AI infra and developer tools; I lead the W&amp;B SDK team.</p>
+        </li>
+        <li class="q">
+          <span class="world">WORLD 3</span>
+          <p><b>Caltech</b>. AI for sky surveys, plus lasers and robotic telescopes.</p>
+        </li>
+        <li class="q">
+          <span class="world">WORLD 2</span>
+          <p><b>JIVE</b>, Netherlands. Tracked deep-space missions with radio interferometry.</p>
+        </li>
+        <li class="q">
+          <span class="world">WORLD 1</span>
+          <p><b>Moscow State University</b>. Physics, then a PhD in radio astronomy.</p>
+        </li>
+      </ol>
+    </div>
+    <div class="panel" id="items" role="tabpanel" aria-labelledby="tab-items">
+      <p class="intro">Some cool stuff I’ve built:</p>
+      <ul class="items">
+        <li><a class="item" href="https://github.com/wandb/wandb">
+          <canvas class="spr" data-spr="term" width="12" height="12" aria-hidden="true"></canvas>
+          <span><b>LEET</b><span>Terminal UI for your W&amp;B runs.</span></span></a></li>
+        <li><a class="item" href="https://github.com/wandb/wandb">
+          <canvas class="spr" data-spr="chip" width="12" height="12" aria-hidden="true"></canvas>
+          <span><b>wandb-core</b><span>The Go engine inside the W&amp;B SDK.</span></span></a></li>
+        <li><a class="item" href="https://github.com/wandb/wandb">
+          <canvas class="spr" data-spr="pulse" width="12" height="12" aria-hidden="true"></canvas>
+          <span><b>System metrics</b><span>GPU/TPU monitoring in Go and Rust.</span></span></a></li>
+        <li><a class="item" href="https://github.com/dmitryduev/tails">
+          <canvas class="spr" data-spr="comet" width="12" height="12" aria-hidden="true"></canvas>
+          <span><b>Tails</b><span>Found the first comet discovered with AI.</span></span></a></li>
+        <li><a class="item" href="https://github.com/dmitryduev/DeepStreaks">
+          <canvas class="spr" data-spr="rock" width="12" height="12" aria-hidden="true"></canvas>
+          <span><b>DeepStreaks</b><span>Hunts near-Earth asteroids.</span></span></a></li>
+        <li><a class="item" href="https://github.com/dmitryduev/braai">
+          <canvas class="spr" data-spr="flame" width="12" height="12" aria-hidden="true"></canvas>
+          <span><b>braai</b><span>Tells real cosmic events from bogus ones.</span></span></a></li>
+        <li><a class="item" href="https://github.com/skyportal/kowalski">
+          <canvas class="spr" data-spr="penguin" width="12" height="12" aria-hidden="true"></canvas>
+          <span><b>Kowalski</b><span>Sky-survey archive and alert broker.</span></span></a></li>
+        <li><a class="item" href="https://github.com/fritz-marshal/fritz">
+          <canvas class="spr" data-spr="scope" width="12" height="12" aria-hidden="true"></canvas>
+          <span><b>Fritz</b><span>Data platform for the Zwicky Transient Facility.</span></span></a></li>
+      </ul>
+    </div>
+    <div class="panel" id="scores" role="tabpanel" aria-labelledby="tab-scores">
+      <table class="scores">
+        <thead><tr><th scope="col">RANK</th><th scope="col">SCORE</th><th scope="col">UNIT</th></tr></thead>
+        <tbody>
+          <tr><td>1ST</td><td class="n" data-n="13709">13,709</td><td>citations<small>Google Scholar · 13 Nov 2026</small></td></tr>
+          <tr><td>2ND</td><td class="n" data-n="200" data-suffix="+">200+</td><td>publications<small>CV · Sep 2026</small></td></tr>
+          <tr><td>3RD</td><td class="n" data-n="113">113</td><td>papers cited 10+ times<small>Google Scholar · 13 Nov 2026</small></td></tr>
+          <tr><td>4TH</td><td class="n" data-n="100" data-suffix="+">100+</td><td>asteroids discovered<small>CV · Sep 2026</small></td></tr>
+          <tr><td>5TH</td><td class="n" data-n="60" data-suffix="+">60+</td><td>talks, incl. an ICML keynote<small>CV · Sep 2026</small></td></tr>
+          <tr><td>6TH</td><td class="n" data-n="55">55</td><td>h-index<small>Google Scholar · 13 Nov 2026</small></td></tr>
+          <tr><td>7TH</td><td class="n" data-n="1">1</td><td>comet found with AI<small>CV · Sep 2026</small></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="links">
+  <h2 class="px tab" data-scale="3" data-min="2">CONTINUE?</h2>
+  <div class="win">
+    <ul class="menu">
+      <li><a href="https://www.linkedin.com/in/dmitryduev/"><b>LINKEDIN</b><span>say hi here</span></a></li>
+      <li><a href="https://github.com/dmitryduev"><b>GITHUB</b><span>github.com/dmitryduev</span></a></li>
+      <li><a href="https://scholar.google.com/citations?user=wkeIw9IAAAAJ"><b>SCHOLAR</b><span>papers &amp; citations</span></a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>© 2026 Dmitry Duev · no cookies, no trackers</p>
+  <p class="dim konami" aria-hidden="true">↑↑↓↓←→←→BA</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
